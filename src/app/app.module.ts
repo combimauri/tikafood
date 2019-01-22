@@ -5,8 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
-import { AgmCoreModule } from '@agm/core';
-
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -26,9 +24,6 @@ import { LandingComponent } from './landing/landing.component';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AgmCoreModule.forRoot({
-      apiKey: environment.googlemaps
-    }),
     AppRoutingModule,
     BrowserAnimationsModule
   ],

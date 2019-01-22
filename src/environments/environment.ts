@@ -4,10 +4,8 @@
 
 export const environment = {
   production: false,
-  googlemaps: '',
   mapbox: {
-    accessToken:
-      ''
+    accessToken: ''
   },
   firebase: {
     apiKey: '',
