@@ -1,4 +1,15 @@
 export const environment = {
   production: true,
-  googlemaps: ''
+  googlemaps: '',
+  mapbox: {
+    accessToken: ''
+  },
+  firebase: {
+    apiKey: '',
+    authDomain: '',
+    databaseURL: '',
+    projectId: '',
+    storageBucket: '',
+    messagingSenderId: ''
+  }
 };

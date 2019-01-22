@@ -4,7 +4,19 @@
 
 export const environment = {
   production: false,
-  googlemaps: ''
+  googlemaps: '',
+  mapbox: {
+    accessToken:
+      ''
+  },
+  firebase: {
+    apiKey: '',
+    authDomain: '',
+    databaseURL: '',
+    projectId: '',
+    storageBucket: '',
+    messagingSenderId: ''
+  }
 };
 
 /*
