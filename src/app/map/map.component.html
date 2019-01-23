@@ -1,0 +1,16 @@
+<!-- <div *ngFor="let marker of markers">
+  <button class="btn" (click)="flyTo(marker)">{{ marker.properties.message }}</button>
+  <button class="btn red" (click)="removeMarker(marker)">Delete</button>
+</div> -->
+
+<div class="map" id="map"></div>
+
+<div id="add-marker-modal" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <input type="text" [(ngModel)]="message" placeholder="your message...">
+  </div>
+  <div class="modal-footer">
+    <a (click)="addMarkerHere()" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>

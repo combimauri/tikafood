@@ -1,3 +1,14 @@
 export const environment = {
-  production: true
+  production: true,
+  mapbox: {
+    accessToken: ''
+  },
+  firebase: {
+    apiKey: '',
+    authDomain: '',
+    databaseURL: '',
+    projectId: '',
+    storageBucket: '',
+    messagingSenderId: ''
+  }
 };
