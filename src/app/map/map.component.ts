@@ -6,6 +6,9 @@ import * as M from 'materialize-css';
 import { GeoJson, FeatureCollection } from './map';
 import { MapService } from './map.service';
 
+const cochaLat = -17.393695;
+const cochaLng = -66.157126;
+
 @Component({
   selector: 'tika-map',
   templateUrl: './map.component.html',
@@ -15,8 +18,8 @@ export class MapComponent implements OnInit {
   /// default settings
   map: mapboxgl.Map;
   style = 'mapbox://styles/mauri075/cjr822ih905uy2tlbgxqkecg6';
-  lat = 37.75;
-  lng = -122.41;
+  lat = cochaLat;
+  lng = cochaLng;
   message = 'Hello World!';
 
   // data

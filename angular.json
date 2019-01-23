@@ -48,7 +48,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,7 +102,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/materialize-css/dist/js/materialize.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
