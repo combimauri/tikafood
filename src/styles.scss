@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "node_modules/materialize-css/sass/components/color-variables";
 
-$primary-color: color("blue", "lighten-2") !default;
+$primary-color: color("pink", "lighten-1") !default;
 $primary-color-light: false !default;
 $primary-color-dark: false !default;
 
@@ -20,3 +20,20 @@ $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
 
 @import 'node_modules/materialize-css/sass/materialize';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-content {
+  padding-top: 56px;
+
+  @media only screen and (min-width: 601px) {
+    padding-top: 64px;
+  }
+}
+
+.primary {
+  background-color: $primary-color;
+}

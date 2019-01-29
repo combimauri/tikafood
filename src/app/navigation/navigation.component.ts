@@ -9,9 +9,7 @@ import * as M from 'materialize-css';
 })
 export class NavigationComponent implements OnInit {
   ngOnInit(): void {
-    document.addEventListener('DOMContentLoaded', function() {
-      const elems = document.querySelectorAll('.sidenav');
-      M.Sidenav.init(elems);
-    });
+    const elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
   }
 }
