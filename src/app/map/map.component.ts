@@ -30,10 +30,8 @@ export class MapComponent implements OnInit {
   constructor(private mapService: MapService) {}
 
   ngOnInit(): void {
-    document.addEventListener('DOMContentLoaded', function() {
-      const elems = document.querySelectorAll('.modal');
-      M.Modal.init(elems);
-    });
+    const elems = document.querySelectorAll('.modal');
+    M.Modal.init(elems);
 
     this.markers = [];
     this.initializeMap();
@@ -51,10 +49,7 @@ export class MapComponent implements OnInit {
 
   addMarkerHere(): void {
     console.log('hola mundo');
-    const coordinates = [
-      this.currentLngLat.lng,
-      this.currentLngLat.lat
-    ];
+    const coordinates = [this.currentLngLat.lng, this.currentLngLat.lat];
     const newMarker = new GeoJson(coordinates, { message: this.message });
     this.mapService.createMarker(newMarker);
   }
